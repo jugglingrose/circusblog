@@ -1,0 +1,13 @@
+This is the index.ejs file
+<div class="container">
+  <div class="row">
+    <% site.posts.forEach(function(post){ %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="contain">
+          <a href="<%- post.path %>"><h2><%- post.title %></h2></a>
+          <p><%- post.date %></p>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
